@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <!-- General Information -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+	<link rel="shortcut icon" type="image/jpg" href="../img/tree.jpg">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+	<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+	<!-- Bootstrap core CSS -->
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../css/dashboard.css" rel="stylesheet">
+  </head>
+  <!-- Body -->
+  <body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<!-- Settings Dropdown Menu -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle btn-dark" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+					<ul class="dropdown-menu settings-background" aria-labelledby="dropdown01">
+						<div id="settings">
+							<form action="#" class="name-form d-flex" id="name-form">
+								<input type="text" class="name-input" id="name-input" placeholder="Please type your name here">
+								<button class="nameBtn" type="submit">Update</button>
+							</form>
+						</div>
+						<div>
+							<!-- future settings here -->
+						</div>
+					</ul>
+				</li>
+				<!-- Search Bar Dropdown Menu -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle btn-dark" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Search</a>
+					<ul class="dropdown-menu settings-background" aria-labelledby="dropdown01">
+						<div id="settings">
+							<form class="name-form d-flex" method="GET" action="https://www.google.com/search">
+								<input class="name-input" type="search" name="q" placeholder="Search Google" aria-label="Search">
+								<button class="nameBtn" type="submit">Search</button>
+							</form>
+						</div>
+						<div id="settings">
+							<form class="name-form d-flex" method="GET" action="https://duckduckgo.com/?">
+								<input class="name-input" type="search" name="q" placeholder="Search DuckDuckGo" aria-label="Search">
+								<button class="nameBtn" type="submit">Search</button>
+							</form>
+						</div>
+					</ul>
+				</li>
+				<!-- Internet Speed Test Link -->
+				<li class="nav-item">
+					<a class="nav-link btn-dark" href="https://fast.com" target="_blank" rel="noreferrer noopener">Speed Test</a>
+				</li>
+				<!--Audio Player-->
+				<audio controls loop
+					src="../audio/morrowind.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+		</div>
+	</nav>
+	<!-- Main Body -->
+		<!-- Greeting & Name -->
+		<div class="starter-template text-center py-5 px-3">
+			<h1><span class="greeting" id="greeting"></span> <span class="greeting" id="name"> </span></h1>
+		</div>
+		<!--Weather-->
+		<div class="weather-container">
+			<div class="weather">
+				<!--code copied from weatherwidget.io-->
+				<a class="weatherwidget-io" href="https://forecast7.com/en/33d82n84d58/mableton/?unit=us" data-basecolor="rgba(102, 26, 97, 0)" data-textcolor="rgba(255, 255, 255, 1)" >Mableton, GA, USA</a>
+			</div>
+		</div>
+		<!--ToDo List-->
+		<div class="to-do-list" id="to-do-list">
+			<h1 class="to-do-list-header">Focus for Today</h1>
+			<div class="task-list">
+				<ul class="ul-task-list" id="ul-task-list"></ul>
+			</div>
+			<div class="input-and-add">
+				<form class="input-and-add-form" id="input-and-add-form" action="#">
+					<input class="task-input" type="text" id="myInput" placeholder="To Do">
+					<button type="submit" class="addBtn">Add</button>
+				</form>
+			</div>
+		</div>
+	<!-- Bootstrap core JS -->
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Custom JS -->
+	<script type="text/javascript" src="../js/dashboard.js"></script>
+	</body>
+</html>
