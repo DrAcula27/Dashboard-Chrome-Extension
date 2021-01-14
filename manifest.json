@@ -1,7 +1,7 @@
 {
 	"name": "Dashboard",
 
-	"version": "1.0",
+	"version": "1.1",
 
 	"description": "This Chrome extension greets the user and autoplays music each time they open a new tab",
 
@@ -10,11 +10,13 @@
 	"incognito": "split", //Tells browser what to do when in incognito & allows it to run in its own process
 
 	"chrome_url_overrides": {
-		"newtab": "index.html" //Tells chrome to open index.html when new tab is opened
+		"newtab": "../html/dashboard.html" //Tells chrome to open index.html when new tab is opened
 	},
 
 	"permissions": [ //Value of this will give user a pop-up letting them know this extension will_
 		"activeTab" //override their new tab when they try to install it
-	]
+	],
+	
+	 "content_security_policy": "script-src 'self' https://weatherwidget.io/js/widget.min.js; object-src 'self'"
 
 }

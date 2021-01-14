@@ -1,0 +1,60 @@
+<!--Dashboard-->
+<!DOCTYPE html>
+<html lang="en">
+	<!--Header Info-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dashboard</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css">
+		<link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+	</head>
+	<!--Body-->
+	<body>
+		<nav>
+			<!--Settings-->
+			<div class="settings-container">
+				<button id="settings-button">Settings</button>
+				<div class="settings" id="settings">
+					<form action="#" class="name-form" id="name-form">
+						<input type="text" class="name-input" id="name-input" placeholder="Please enter your name">
+						<button class="name-button" type="submit">Add</button>
+					</form>
+				</div>
+			</div>
+			<!--Weather-->
+			<div class="weather-container">
+				<div class="weather">
+					<!--code copied from weatherwidget.io-->
+					<a class="weatherwidget-io" href="https://forecast7.com/en/33d82n84d58/mableton/?unit=us" data-basecolor="rgba(255, 255, 255, 0.1)" >Mableton, GA, USA</a>
+				</div>
+			</div>
+			<!--Audio Player-->
+			<div class="audio-position">
+				<audio controls loop
+					src="../audio/morrowind.mp3" type="audio/mp3">
+					Your browser does not support the audio element.
+				</audio>
+			</div>
+		</nav>
+		<!--Greeting & Name-->
+		<div class="greeting-and-name">
+			<h1><span class="greeting" id="greeting"></span> <span class="greeting" id="name"> </span></h1>
+		</div>
+		<!--ToDo List-->
+		<div class="to-do-list" id="to-do-list">
+			<h2 class="to-do-list-header">To Do Today</h2>
+			<div class="task-list">
+				<ul class="ul-task-list" id="ul-task-list"></ul>
+			</div>
+			<div class="input-and-add">
+				<form class="input-and-add-form" id="input-and-add-form" action="#">
+					<input class="task-input" type="text" id="myInput" placeholder="To Do">
+					<button type="submit" class="addBtn">Add</button>
+				</form>
+			</div>
+		</div>
+		<!--JavaScript-->
+		<script type="text/javascript" src="main.js"></script>
+	</body>	
+</html>
