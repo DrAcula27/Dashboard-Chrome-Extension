@@ -12,7 +12,7 @@
 
 ## Static Demo
 
-![Dashboard Image](./img/static-demo.png)
+![Dashboard Image](./assets/img/static-demo.png)
 
 ## Author
 
